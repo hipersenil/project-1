@@ -25,10 +25,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'largeapp'`, () => {
+  it(`should have as title 'largeapp for me'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('largeapp');
+    expect(app.title).toEqual('largeapp for me');
   });
 
   it('should render title', () => {
@@ -36,6 +36,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     console.log("AQUI "+compiled.querySelector('.content span').textContent)
-    expect(compiled.querySelector('.content span').textContent).toContain('largeapp app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('largeapp for me app is running!');
   });
 });
